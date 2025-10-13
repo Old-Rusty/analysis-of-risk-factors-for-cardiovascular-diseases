@@ -63,13 +63,23 @@ Trained Logistic Regression and Random Forest models to predict CVD, using an 80
 A PowerBI dashboard was created to present the data and insights to a non technical audience.
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+* Statistical tests provided interpretations of the relationships between risk factors and CVD.
+* Conclusions were confirmed and checked using visualisations.
+* Machine learning models validated and extended these findings through predictive analysis.
+* Findings and insights are presented to a non technical audience through a dashboard.
+
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+
+- **Descriptive statistics:** Summarised data distributions.  
+- **Normality testing (Shapiro–Wilk):** Checked assumptions.  
+- **Non-parametric tests (Mann–Whitney U, Chi-Square):** Assessed group differences and associations.  
+- **Machine learning (Logistic Regression, Random Forest):** Predicted CVD and identified key features.
+
+### **Limitations & Alternatives**
+- Limited lifestyle and family history data reduced model accuracy.
+- Non-normal distributions required non-parametric tests.
+- Future work could include more informative features.
 
 ## Ethical considerations
 * Source of the Dataset contains some vague descriptions of the features. For example, levels of cholesterol.
