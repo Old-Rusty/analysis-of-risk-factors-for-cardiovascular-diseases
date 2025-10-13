@@ -1,20 +1,50 @@
-# Project XYZ
+# Analysis of Risk Factors for Cardiovascular Diseases
 
-**Project XYZ** is a comprehensive data analysis tool designed to streamline data exploration, analysis, and visualisation. The tool supports multiple data formats and provides an intuitive interface for both novice and expert data scientists.
+This project aims to analyse how key factors, such as lifestyle choices or medical indicators, may affect the likelihood of developing cardiovascular diseases (CVD).
 
 # ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 ## Dataset Content
-* Describe your dataset. Choose a dataset of reasonable size to avoid exceeding the repository's maximum size of 100Gb.
+- Data source: https://data.world/kudem/heart-disease-dataset
+- Data author: [Kuzak Dempsy](https://data.world/kudem)
+- Kaggle download link: https://www.kaggle.com/datasets/thedevastator/exploring-risk-factors-for-cardiovascular-diseas 
+
+|Name of feature|Description|Data type|
+| ----------- | ----------- | ----------- |
+|`index`|Index of the entry|Integer|
+|`id`|Unique identifier assigned to each person|Integer|
+|`age`|Age of the person in days|Integer|
+|`gender`|Gender of the person, 1 = male, 2 = female|Integer|
+|`height`|Height of the person in cm|Integer|
+|`weight`|Weight of the person in kg|Float|
+|`ap_hi`|Systolic blood pressure reading|Integer|
+|`ap_lo`|Diastolic blood pressure reading|Integer|
+|`cholesterol`|Cholesterol level|Integer|
+|`gluc`|Glucose level|Integer|
+|`smoke`|Smoking status, 0 = non smoker, 1 = smoker|Integer|
+|`alco`|Alcohol status, 0 = do not consume alcohol, 1 = consume alcohol|Integer|
+|`active`|Physical activity status, 0 = non active, 1= active|Integer|
+|`cardio`|Presence of cardiovascular disease, 0 = non present, 1 = present|Integer|
 
 
 ## Business Requirements
-* Describe your business requirements
+* Identify key factors contributing to the development of CVD
+* Generate Key insights on how different medical indicators and lifestyle choices may influence the development of CVD
+* Create a machine learning model that will predict the likelihood of an individual having CVD based on various factors
+* Present findings to a non techical audience through a dashboard
 
 
 ## Hypothesis and how to validate?
-* List here your project hypothesis(es) and how you envision validating it (them) 
+- Older individuals are more likely to develope cardiovascular disease (CVD)
+- Males are more likely to develope CVD than females
+- High blood pressure increase the likelihood of developing CDV
+- High cholesterol individuals are more likely to have CDV
+- Physically active individuals are less likely to have CDV
+- Smokers are more likely to have CDV
+- Alcohol consumption increase the likelyhood of developing CDV
+
+Relevent statistical tests will be conducted during the EDA process. Visualisations will also be provided to support any conclusions drawn.
 
 ## Project Plan
 * Outline the high-level steps taken for the analysis.
@@ -31,8 +61,9 @@
 * How did you use generative AI tools to help with ideation, design thinking and code optimisation?
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+* Source of the Dataset contains some vague descriptions of the features. For example, levels of cholesterol.
+* Individuals with certain medical conditions such as restricted growth may be represented inaccurately.
+* Demographic of the dataset is limited and may not accurately portray populations of different parts of the world.
 
 ## Dashboard Design
 * List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
@@ -49,35 +80,24 @@
 * What challenges did you face, and what strategies were used to overcome these challenges?
 * What new skills or tools do you plan to learn next based on your project experience? 
 
-## Deployment
-### Heroku
-
-* The App live link is: https://YOUR_APP_NAME.herokuapp.com/ 
-* Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
-* The project was deployed to Heroku using the following steps.
-
-1. Log in to Heroku and create an App
-2. From the Deploy tab, select GitHub as the deployment method.
-3. Select your repository name and click Search. Once it is found, click Connect.
-4. Select the branch you want to deploy, then click Deploy Branch.
-5. The deployment process should happen smoothly if all deployment files are fully functional. Click now the button Open App on the top of the page to access your App.
-6. If the slug size is too large then add large files not required for the app to the .slugignore file.
-
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+* numpy:
+* pandas:
+* matplotlib:
+* seaborn:
+* plotly:
+* scikit-learn:
+
 
 
 ## Credits 
 
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
+- Data source: https://data.world/kudem/heart-disease-dataset
 
 ### Content 
 
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+- Generative AI such as Copilot and ChatGPT were used to assist with ideation and code optimisation
 
 ### Media
 
@@ -87,4 +107,4 @@
 
 
 ## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+* Thank the Vasi and Niel who provided support through out this project.
