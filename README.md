@@ -76,56 +76,61 @@ A PowerBI dashboard was created to present the data and insights to a non techni
 - **Non-parametric tests (Mann–Whitney U, Chi-Square):** Assessed group differences and associations.  
 - **Machine learning (Logistic Regression, Random Forest):** Predicted CVD and identified key features.
 
-### **Limitations & Alternatives**
+### Limitations & Alternatives
 - Limited lifestyle and family history data reduced model accuracy.
+- Source of the Dataset contains some vague descriptions of the features. For example, levels of cholesterol.
 - Non-normal distributions required non-parametric tests.
+- Some bias and skew in the sample.
 - Future work could include more informative features.
 
 ## Ethical considerations
-* Source of the Dataset contains some vague descriptions of the features. For example, levels of cholesterol.
+* No identifiable features for individuals in the dataset.
 * Individuals with certain medical conditions such as restricted growth may be represented inaccurately.
 * Demographic of the dataset is limited and may not accurately portray populations of different parts of the world.
 
 ## Dashboard Design
-* List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other item that your dashboard library supports.
-* Later, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project you were confident you would use a given plot to display an insight but subsequently you used another plot type).
-* How were data insights communicated to technical and non-technical audiences?
-* Explain how the dashboard was designed to communicate complex data insights to different audiences. 
+The dashboard was designed with two interactive pages to explore and communicate insights about cardiovascular disease (CVD) risk factors. It allows users to interactively filter, compare, and interpret patterns in the dataset through clear and intuitive visuals.
+
+The dashboard was built to:
+- Provide a balanced view of both numerical and categorical risk factors.  
+- Use interactive filters and slicers to promote exploratory analysis without coding.  
+- Ensure accessibility and interpretability for both health data professionals and general stakeholders.  
+- Communicate complex statistical insights through visual summaries, allowing users to connect data patterns to real-world health implications.
+
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+* No known unresolved issues
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+
+- A significant amount of time was spent on the **Exploratory Data Analysis (EDA)** phase due to uncertainty in the notebook’s structure, resulting in frequent revisions and backtracking.  
+- Future projects would benefit from establishing a **clear project methodology and workflow** at the start to improve efficiency and maintain focus.  
+
+For future project:
+- Seek to use **Streamlit** to develop an interactive and shareable dashboard interface.  
+- Seek to implement **Heroku (or similar cloud platforms)** for model and dashboard deployment to allow easy public access and demonstration.  
+
 
 
 ## Main Data Analysis Libraries
-* numpy:
-* pandas:
-* matplotlib:
-* seaborn:
-* plotly:
-* scikit-learn:
+* **numpy:** Used for fast numerical computations and handling arrays for mathematical operations.
+* **pandas:** Managed, cleaned, and transformed tabular data efficiently using DataFrames.
+* **matplotlib:** Created static visualisations such as histograms, bar charts, and box plots for EDA.
+* **seaborn:** Produced enhanced statistical visualisations with simpler syntax and built-in styling.
+* **plotly:** Built interactive and dynamic charts for dashboard integration and data exploration.
+* **scipy:** Used to perform statistical hypothesis tests such as Shapiro–Wilk, Mann–Whitney U, and Chi-Square tests.
+* **scikit-learn:** Implemented machine learning models, preprocessing pipelines, and model evaluation metrics.
+
 
 
 
 ## Credits 
-
 - Data source: https://data.world/kudem/heart-disease-dataset
-
-### Content 
-
+- Data author: [Kuzak Dempsy](https://data.world/kudem)
 - Generative AI such as Copilot and ChatGPT were used to assist with ideation and code optimisation
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+- Code institute logo [link](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
 
 
-## Acknowledgements (optional)
-* Thank the Vasi and Niel who provided support through out this project.
+## Acknowledgements
+Many thanks to Vasi, my fellow cohorts and the team at Code Institute who provided support through out this project.
