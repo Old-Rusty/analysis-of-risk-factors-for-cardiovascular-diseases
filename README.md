@@ -47,9 +47,20 @@ This project aims to analyse how key factors, such as lifestyle choices or medic
 Relevent statistical tests will be conducted during the EDA process. Visualisations will also be provided to support any conclusions drawn.
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+### **Overview**
+1. **Extract Transform Load (ETL):**  
+Conducted basic cleaning of the dataset, detecting and handling missing or duplicate data. Removing obvious errors and unnecessary features.
+2. **Exploratory Data Analysis (EDA): Feature Engineering and Descriptive Analysis**  
+- Categorical data values represented by integers were replaced to actural categorical values for easier interpritation
+- New features added through manipulation of existing data
+- Extreme outliers were detected and handled
+- Descriptive analysis was conducted to get an overview of the data after transforming
+3. **EDA: Hypothesis Testing and Visualisation**
+Hypotheses were tested using statistical tests such as the chi squred test or the Mann-Whitney test to prove initial hypotheses and visualisation were produced using matplotlib and seaborn to support conclusions.
+4. **Machine Learning:**  
+Trained Logistic Regression and Random Forest models to predict CVD, using an 80/20 train-test split and ROC-AUC for evaluation.
+5. **Dashboarding**
+A PowerBI dashboard was created to present the data and insights to a non technical audience.
 
 ## The rationale to map the business requirements to the Data Visualisations
 * List your business requirements and a rationale to map them to the Data Visualisations
